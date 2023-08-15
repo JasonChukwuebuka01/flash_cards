@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="container">
+        <nav class="nav">
+          <h1>
+            FlashCards
+            <i class="fa fa-address-card" aria-hidden="true" id="card"></i>
+          </h1>
+          <div class="nav_butt">
+            <button id="new_cards">New Cards</button>
+            <button id="del_cards">Del cards</button>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <section class="container container2">
+      <div class="create_box">
+        <h2>Create FlashCard</h2>
+
+        <div class="box box1">
+          <label for="question">Question</label>
+          <textarea id="question" autofocus></textarea>
+        </div>
+
+        <div class="box box2">
+          <label for="answer">Answer</label>
+          <textarea id="answer"></textarea>
+        </div>
+
+        <div class="butt_group">
+          <button id="save">Save</button>
+          <button id="delete">delete</button>
+        </div>
+      </div>
+
+      <div class="flashcards"></div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
